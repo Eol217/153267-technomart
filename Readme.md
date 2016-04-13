@@ -1,7 +1,8 @@
 # Личный проект «Техномарт»
 
 * Студент: [Юлия Золотухина](https://up.htmlacademy.ru/htmlcss/13/user/153267).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Сальников] (https://htmlacademy.ru/profile/id11027).
+* Наставник: [Максим * Сальников] (https://htmlacademy.ru/profile/id11027).
 
 ---
 
