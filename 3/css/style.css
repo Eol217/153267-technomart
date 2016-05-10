@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  background-color: #fff;
+  margin: 0;
+  min-width: 960px;
+  padding: 0;
+}
+.header-main {
+    margin-bottom: 59px;
+}
+header {
+    background-color: #f2f6f8;
+    margin-bottom: 22.5px;
+    padding-bottom: 60px;
+}
+.header-upper-panel {
+    background-color: #293449;
+    box-sizing: border-box;
+    font-size: 0;
+    margin-bottom: 47px;
+    min-height: 42px;
+}
+.container {
+    margin: 0 auto;
+    width: 940px;
+}
+.header-top {
+    background-color: #293449;
+    box-sizing: border-box;
+    font-size: 0;
+    margin-bottom: 47px;
+    min-height: 42px;
+}
+.header-upper-panel a, .header-upper-panel form, .header-upper-search label, .header-upper-panel .header-upper-search {
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+}
+.header-upper-logo {
+    background-color: #ee3643;
+    box-shadow: 0 5px 0 0 #ca2c37;
+    padding: 8px 50px 8px 52px;
+    width: 220px;
+}
+.header-upper-logo {
+    color: #fff;
+    font-family: "Cuprum",sans-serif,Arial;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Cuprum",sans-serif,Arial;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.header-upper-search input {
+    background-color: #293449;
+    border: medium none;
+    box-sizing: border-box;
+    height: 42px;
+    outline: medium none;
+    padding-bottom: 12px;
+    padding-left: 49px;
+    padding-top: 12px;
+    width: 270px;
+}
+.header-upper-search input {
+    color: #000;
+    font-family: "Cuprum",sans-serif,Arial;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.header-upper-search label::before {
+    color: #6a7180;
+    content: "🔍";
+    cursor: pointer;
+    display: inline-block;
+    font-family: "symbols-technomart";
+    font-size: 17px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    left: -252px;
+    position: absolute;
+    text-align: center;
+    text-decoration: inherit;
+    text-transform: none;
+    top: 12px;
+    vertical-align: top;
+}
+.header-upper-search label {
+    position: relative;
+}
+.header-upper-search input::-moz-placeholder {
+    color: #fff;
+    font-family: "Cuprum",sans-serif,Arial;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 18px;
+}
+input[type="search"]:focus ~ label::before, input[type="search"]:active ~ label::before {
+    color: #ee3643;
+}
+input[type="search"]:hover ~ label::before {
+    color: #fff;
+}
