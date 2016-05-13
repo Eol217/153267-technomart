@@ -1,3 +1,97 @@
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: "symbols-technomart";
+  src: url("../fonts/symbols-technomart.woff") format("woff"),
+       url("../fonts/symbols-technomart.woff2") format("woff2");
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-technomart";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+
+  speak: none;
+}
+
+.icon-left::before { content: "\3c"; } /* "&lt;" */
+.icon-right::before { content: "\3e"; } /* "&gt;" */
+.icon-basket::before { content: "\62"; } /* "b" */
+.icon-facebook::before { content: "\66"; } /* "f" */
+.icon-twitter::before { content: "\74"; } /* "t" */
+.icon-vk::before { content: "\76"; } /* "v" */
+.icon-up::before { content: "\2c4"; } /* "˄" */
+.icon-down::before { content: "\2c5"; } /* "˅" */
+.icon-left-big::before { content: "\2190"; } /* "←" */
+.icon-right-big::before { content: "\2192"; } /* "→" */
+.icon-login::before { content: "\2386"; } /* "⎆" */
+.icon-logout::before { content: "\241b"; } /* "␛" */
+.icon-up-dir::before { content: "\25b2"; } /* "▲" */
+.icon-down-dir::before { content: "\25bc"; } /* "▼" */
+.icon-circle::before { content: "\25cb"; } /* "○" */
+.icon-circle-dot::before { content: "\25cf"; } /* "●" */
+.icon-star::before { content: "\2605"; } /* "★" */
+.icon-check-off::before { content: "\2610"; } /* "☐" */
+.icon-check-on::before { content: "\2611"; } /* "☑" */
+.icon-youtube::before { content: "\f39e"; } /* "" */
+.icon-home::before { content: "🏠"; } /* "\1f3e0" */
+.icon-user::before { content: "👨"; } /* "\1f468" */
+.icon-phone::before { content: "📞"; } /* "\1f4de" */
+.icon-instagramm::before { content: "📷"; } /* "\1f4f7" */
+.icon-search::before { content: "🔍"; } /* "\1f50d" */
+.icon-bookmark::before { content: "🔖"; } /* "\1f516" */
+
+p,
+ul,
+h3,
+h2,
+h1,
+input,
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+a:focus {
+    outline: none;
+}
+
+figure {
+    line-height: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
 body {
   font-family: Arial, sans-serif;
   font-size: 20px;
@@ -77,9 +171,74 @@ header {
     font-weight: 400;
     line-height: 18px;
 }
+
+.header-upper-search input::-webkit-input-placeholder {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.header-upper-search input::-moz-placeholder {
+    color: #fff;
+    font-family: "Cuprum",sans-serif,Arial;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.header-upper-search input:-moz-placeholder {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.header-upper-search input:-ms-input-placeholder {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.header-upper-search input:focus::-webkit-input-placeholder {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.header-upper-search input:focus::-moz-placeholder {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.header-upper-search input:focus:-moz-placeholder {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #000000;
+}
+
+.header-upper-search input:focus:-ms-input-placeholder {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #000000;
+}
+
 .header-upper-search label::before {
     color: #6a7180;
-    content: "🔍";
+    content: "\1f50d";�
     cursor: pointer;
     display: inline-block;
     font-family: "symbols-technomart";
@@ -98,16 +257,117 @@ header {
 .header-upper-search label {
     position: relative;
 }
-.header-upper-search input::-moz-placeholder {
-    color: #fff;
-    font-family: "Cuprum",sans-serif,Arial;
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 18px;
-}
+
 input[type="search"]:focus ~ label::before, input[type="search"]:active ~ label::before {
     color: #ee3643;
 }
 input[type="search"]:hover ~ label::before {
     color: #fff;
+}
+
+.header-upper-search input:focus {
+    background-color: #ffffff;
+}
+
+.header-upper-cart,
+.header-upper-order,
+.header-upper-bookmark {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header-upper-cart:active,
+.header-upper-bookmark:active {
+    color: rgba(255, 255, 255, .6);
+}
+
+
+.header-upper-cart,
+.header-upper-bookmark {
+    position: relative;
+    width: 150px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 44px;
+}
+
+.header-upper-bookmark::before {
+    position: absolute;
+    top: 12px;
+    left: 18px;
+    font-size: 17px;
+    font-family: "symbols-technomart";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    content: "\1f516";
+    cursor: pointer;
+    color: #6a7180;
+}
+
+.header-upper-bookmark:hover::before {
+    color: #ffffff;
+}
+
+.header-upper-bookmark:active::before {
+    color: #a2a5a9;
+}
+
+.header-upper-cart:active,
+.header-upper-bookmark:active {
+    background-color: #161d29;
+}
+
+.header-upper-cart::before {
+    position: absolute;
+    top: 12px;
+    left: 18px;
+    font-size: 17px;
+    font-family: "symbols-technomart";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    content: "\62";
+    cursor: pointer;
+    color: #6a7180;
+}
+
+.header-upper-cart:hover::before {
+    color: #ffffff;
+}
+
+.header-upper-cart:active::before {
+    color: #a2a5a9;
+}
+
+.header-upper-order {
+    width: 150px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    background-color: #63a63e;
+}
+
+.header-upper-order:hover {
+    background-color: #5fbb2d;
+}
+
+.header-upper-order:active {
+    background-color: #518534;
 }
