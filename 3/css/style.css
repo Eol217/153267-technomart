@@ -1,3 +1,4 @@
+@charset "utf-8";
 @font-face {
   font-weight: normal;
   font-style: normal;
@@ -32,26 +33,26 @@
 .icon-facebook::before { content: "\66"; } /* "f" */
 .icon-twitter::before { content: "\74"; } /* "t" */
 .icon-vk::before { content: "\76"; } /* "v" */
-.icon-up::before { content: "\2c4"; } /* "˄" */
-.icon-down::before { content: "\2c5"; } /* "˅" */
-.icon-left-big::before { content: "\2190"; } /* "←" */
-.icon-right-big::before { content: "\2192"; } /* "→" */
-.icon-login::before { content: "\2386"; } /* "⎆" */
-.icon-logout::before { content: "\241b"; } /* "␛" */
-.icon-up-dir::before { content: "\25b2"; } /* "▲" */
-.icon-down-dir::before { content: "\25bc"; } /* "▼" */
-.icon-circle::before { content: "\25cb"; } /* "○" */
-.icon-circle-dot::before { content: "\25cf"; } /* "●" */
-.icon-star::before { content: "\2605"; } /* "★" */
-.icon-check-off::before { content: "\2610"; } /* "☐" */
-.icon-check-on::before { content: "\2611"; } /* "☑" */
-.icon-youtube::before { content: "\f39e"; } /* "" */
-.icon-home::before { content: "🏠"; } /* "\1f3e0" */
-.icon-user::before { content: "👨"; } /* "\1f468" */
-.icon-phone::before { content: "📞"; } /* "\1f4de" */
-.icon-instagramm::before { content: "📷"; } /* "\1f4f7" */
-.icon-search::before { content: "🔍"; } /* "\1f50d" */
-.icon-bookmark::before { content: "🔖"; } /* "\1f516" */
+.icon-up::before { content: "\2c4"; } /* "Ë„" */
+.icon-down::before { content: "\2c5"; } /* "Ë…" */
+.icon-left-big::before { content: "\2190"; } /* "â†" */
+.icon-right-big::before { content: "\2192"; } /* "â†’" */
+.icon-login::before { content: "\2386"; } /* "âŽ†" */
+.icon-logout::before { content: "\241b"; } /* "â›" */
+.icon-up-dir::before { content: "\25b2"; } /* "â–²" */
+.icon-down-dir::before { content: "\25bc"; } /* "â–¼" */
+.icon-circle::before { content: "\25cb"; } /* "â—‹" */
+.icon-circle-dot::before { content: "\25cf"; } /* "â—" */
+.icon-star::before { content: "\2605"; } /* "â˜…" */
+.icon-check-off::before { content: "\2610"; } /* "â˜" */
+.icon-check-on::before { content: "\2611"; } /* "â˜‘" */
+.icon-youtube::before { content: "\f39e"; } /* "ïŽž" */
+.icon-home::before { content: "ðŸ "; } /* "\1f3e0" */
+.icon-user::before { content: "ðŸ‘¨"; } /* "\1f468" */
+.icon-phone::before { content: "ðŸ“ž"; } /* "\1f4de" */
+.icon-instagramm::before { content: "ðŸ“·"; } /* "\1f4f7" */
+.icon-search::before { content: "ðŸ”"; } /* "\1f50d" */
+.icon-bookmark::before { content: "ðŸ”–"; } /* "\1f516" */
 
 p,
 ul,
@@ -238,7 +239,7 @@ header {
 
 .header-upper-search label::before {
     color: #6a7180;
-    content: "\1f50d";�
+    content: "\1f50d";
     cursor: pointer;
     display: inline-block;
     font-family: "symbols-technomart";
@@ -370,4 +371,279 @@ input[type="search"]:hover ~ label::before {
 
 .header-upper-order:active {
     background-color: #518534;
+}
+
+.header-banner-panel {
+     margin-bottom: 37px;
+} 
+
+.header-banner-about {
+    float: left;
+    margin-right: 70px;
+    padding-left: 50px;
+    white-space: pre-line;
+    width: 200px;
+}
+.header-banner-about {
+    color: #ee3643;
+    font-family: "Cuprum",sans-serif,Arial;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 23px;
+}
+.header-banner-contacts {
+     float: left;
+     width: 270px;
+}
+.header-banner-phone::before {
+    color: #b7bfc8;
+    content: "\1f4de";
+    display: inline-block;
+    font-family: "symbols-technomart";
+    font-size: 18px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    left: 13px;
+    position: absolute;
+    text-align: center;
+    text-decoration: inherit;
+    text-transform: none;
+    top: 10px;
+    vertical-align: top;
+}
+
+.header-banner-phone  {
+    color: #e9292a;
+	border: 3px solid #fff;
+    margin-bottom: 5px;
+    padding: 9px 42px 9px 70px;
+    position: relative;
+}
+.header-banner-phone,
+.header-user-login,
+.header-user-registration  {   /*повтор*/)
+    color: #e9292a;
+    font-family: "Cuprum",sans-serif,Arial;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.header-banner-address {
+     text-align: center;
+}
+
+.header-banner-address {
+    color: #32425c;
+    font-family: "Cuprum",sans-serif,Arial;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+ 
+.header-banner-user {
+    float: right;
+	font-size: 0;
+}	
+.header-user-connected {
+    width: 285px;
+}
+
+.header-user-login::before {
+    color: #000;
+    content: "\2386";
+    display: inline-block;
+    font-family: "symbols-technomart";
+    font-size: 20px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    left: 15px;
+    opacity: 0.3;
+    position: absolute;
+    text-align: center;
+    text-decoration: inherit;
+    text-transform: none;
+    top: 16px;
+    vertical-align: top;
+}
+.header-user-login {
+    margin-right: 10px;
+}
+.header-user-login {
+    background-color: #fff;
+    padding: 14px 27px 15px 48px;
+    position: relative;
+}
+.header-user-login, 
+.header-user-registration {
+    display: inline-block;
+}
+.header-user-login, 
+.header-block-user, 
+.header-user-registration {
+    color: #000;
+    text-decoration: none;
+}
+.header-user-login:hover:before {
+    color: #ee3643;
+    opacity: 1;
+}
+
+.header-user-login:active:before {
+    color: #000000;
+    opacity: .3;
+}
+
+.header-banner-user a:last-child {
+    margin-right: 0;
+}
+.header-user-registration {
+    background-color: #fff;
+    padding: 14px 25px 15px;
+}
+.header-user-login, 
+.header-user-registration {
+    display: inline-block;
+}
+.header-user-login, 
+.header-block-user, 
+.header-user-registration {
+    color: #000;
+    text-decoration: none;
+}
+.header-user-login:hover,
+.header-user-registration:hover {
+    color: #ee3643;
+}
+
+
+/*меню*/
+
+.header-main-menu {
+    background-color: #32425c;
+    border-bottom: 5px solid #293449;
+    font-size: 0;
+    padding-left: 21px;
+}
+.header-main-menu li {
+     display: inline-block;
+    padding: 18px 31px;
+    vertical-align: top;
+}
+.header-main-menu a {
+    color: #fff;
+    font-family: "Cuprum",sans-serif,Arial;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 17px;
+    text-decoration: none;
+}
+a {
+    background-color: transparent;
+}
+
+.header-main-menu ul :hover {
+    background-color: #293449;
+}
+
+.header-main-menu a:active {
+    color: rgba(255, 255, 255, .5);
+    background-color: #293449;
+}
+ .promo {
+    /*font-size: 0;*/
+    margin-bottom: 20px;
+}
+
+.new-item::before  {
+    background-color: #ee3643;
+    color: #fff;
+    content: "new";
+    display: inline-block;
+    font-family: "Cuprum",sans-serif,Arial;
+    font-size: 17px;
+    font-weight: 400;
+    height: 25px;
+    line-height: 25px;
+    position: absolute;
+    right: -30px;
+    text-align: center;
+    top: 10px;
+    transform: rotate(45deg);
+    vertical-align: top;
+    width: 100px;
+}
+.promo-material::after {
+    background: rgba(0, 0, 0, 0) url("../img/sprites.png") no-repeat scroll -39px -31px;
+    content: "";
+    height: 65px;
+    left: 213px;
+    position: absolute;
+    top: 31px;
+    width: 45px;
+}
+.promo .offer-item {
+    margin-right: 20px;
+}
+.promo .offer-item {
+    display: inline-block;
+}
+.promo-material {
+    background-color: #f6b22d;
+}
+.promo-item {
+    min-height: 101px;
+    overflow: hidden;
+    padding-left: 23px;
+    padding-top: 23px;
+    position: relative;
+    width: 277px;
+}
+.promo-item-type {
+    margin-bottom: 15px;
+}
+.promo-item-type {
+    color: #fff;
+    font-family: "Cuprum",sans-serif,Arial;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.promo-item-info {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    width: 135px;
+}
+.promo-item-info /*множество*/ {
+    color: #fff;
+    font-family: "Cuprum",sans-serif,Arial;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.promo-item-info:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.promo-item-info:active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.promo-material::after {
+    background: rgba(0, 0, 0, 0) url("../img/картика") no-repeat scroll 0px 0px;
+    content: "";
+    height: 65px;
+    left: 213px;
+    position: absolute;
+    top: 31px;
+    width: 45px;
 }
